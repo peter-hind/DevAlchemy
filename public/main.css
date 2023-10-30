@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #1f1a3d;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  min-width: 550px;
+  max-width: 2150px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+header {
+  background-size: cover;
+  background-position: center;
+  background-color: #000724;
+  width: 100%;
+}
+
+#main-banner {
+  background-image: url('/images/mainheader.png');
+  background-size: cover;
+  background-position: center;
+  background-color: #000724;
+  width: 100%;
+}
+
+#avatar-banner {
+  background-image: url('/images/avatarheader.png');
+  background-size: cover;
+  background-position: center;
+  background-color: #000724;
+  width: 100%;
+}
+
+a:link,
+a:visited {
+  color: #000724;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b80c09;
+}
+
+h1 {
+  padding: 25px 0 25px 48px;
+  font-size: 2.5em;
+  color: white;
+}
+
+.light-heading {
+  color: white;
+  padding: 30px;
+  background-color: #1f1a3d;
+  margin: 158px 0 50px 50px;
+}
+
+h2 {
+  display: inline-block;
+  margin: 1rem 0 1rem 3rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+nav {
+  background-color: #ab6dd4;
+  width: 100%;
+  padding: 0.25rem 0 0.25rem 0;
+}
+
+nav a,
+.nav {
+  display: inline-block;
+  margin-left: 3rem;
+  padding: 1rem 0 1rem 0;
+  font-size: large;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #000724;
+}
+
+@media (max-width: 630px) {
+  nav a,
+  .nav {
+    display: block;
+    padding: 5px;
+  }
+}
+
+@media (min-width: 630px) {
+  .nav {
+    float: right;
+    margin-right: 3rem;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.data {
+  color: #1a5068;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 3rem 2rem 3rem;
+}
+
+.card {
+  background-size: 75px;
+  background-repeat: no-repeat;
+  background-position: center top 10px;
+  background-color: #ecf6fa;
+  box-shadow: 5px 5px 15px #999;
+  padding: 15px;
+  margin: 10px;
+  width: 209px;
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-height: 50vh;
+}
+
+.cauldron {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.cauldron-image {
+  height: 40vh;
+  width: auto;
+}
+
+#displayed-image {
+  height: 17vh;
+  width: auto;
+}
+
+.brewform {
+  flex: 2;
+}
+
+.option {
+  height: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location,
+.event {
+  display: flex;
+  flex-direction: column;
+}
+
+.location > p {
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.title {
+  font-weight: bold;
+  color: #1a5068;
+  font-size: 1.125rem;
+  margin-top: 80px;
+  border-top: 3px solid #afc2d5;
+  padding-top: 10px;
+}
+
+.time-location {
+  margin-top: 15px;
+  font-size: 0.875rem;
+}
+
+.event-description {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+label {
+  display: inline-block;
+  min-width: 90px;
+  text-align: right;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+@media (max-width: 630px) {
+  label {
+    text-align: left;
+  }
+}
+
+button {
+  background-color: #afc2d5;
+  border: none;
+  padding: 15px;
+  font-size: 0.8rem;
+}
+
+button:hover {
+  background-color: #1a5068;
+  color: white;
+}
+
+textarea {
+  width: 300px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 200px 300px;
+  grid-auto-flow: row;
+  grid-gap: 0.8em;
+  padding: 1.1em;
+  width: max-content;
+}
+
+@media (max-width: 630px) {
+  .form {
+    margin-left: 2rem;
+    grid-template-columns: 300px;
+  }
+}
+
+/* Tricks to make footer stay at the bottom of the page */
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 60px;
+  background-color: white;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #050113;
+  text-align: center;
+}
+
+footer p {
+  display: inline-block;
+  padding-top: 10px;
+  margin: 0 10px;
+  color: white;
+}
+
+footer a:link,
+footer a:visited {
+  color: #afc2d5;
+}
+
+footer a:hover {
+  color: white;
+}

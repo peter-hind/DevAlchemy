@@ -1,0 +1,65 @@
+<div class='container'>
+  <div class='cauldron'>
+    <img
+      src='/images/avatarcauldron.png'
+      alt="DaviD's golden Avatar-themed cauldron"
+      class='cauldron-image'
+    />
+  </div>
+  <div class='brewform'>
+    <form method='POST' action='/:id/brew'>
+      <div class='option'>
+        <select
+          class='select-field'
+          id='first-ingredient-select'
+          name='first-ingredient-select'
+        >
+          <option value='/images/FirePotion.png'>Fire</option>
+          <option value='/images/WaterPotion.png'>Water</option>
+          <option value='/images/EarthPotion.png'>Earth</option>
+        </select>
+        <img
+          id='displayed-image'
+          src='/images/FirePotion.png'
+          alt='Displayed Image'
+          class='ingredient-image'
+        />
+      </div>
+      <div class='option'>
+        <select class='select-field' id='method-select' name='method-select'>
+          <option value='/images/FirePotion.png'>Airbend</option>
+          <option value='/images/WaterPotion.png'>Cloudbend</option>
+        </select>
+        <img
+          id='displayed-image'
+          src='/images/airbend.png'
+          alt='Displayed Image'
+          class='ingredient-image'
+        />
+      </div>
+      <div class='option'>
+        <select
+          class='select-field'
+          id='second-ingredient-select'
+          name='second-ingredient-select'
+        >
+          <option value='fire'>Fire</option>
+          <option value='water'>Water</option>
+          <option value='earth'>Earth</option>
+        </select>
+        <img
+          id='displayed-image'
+          src='/images/FirePotion.png'
+          alt='Displayed Image'
+          class='ingredient-image'
+        />
+      </div>
+    </form>
+  </div>
+</div>
+<script>
+  const imageSelector = document.getElementById('first-ingredient-select');
+  const displayedImage = document.getElementById('displayed-image');
+  imageSelector.addEventListener('change', function () { const selectedImage =
+  imageSelector.value; displayedImage.src = selectedImage; })
+</script>
